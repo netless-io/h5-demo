@@ -60,6 +60,8 @@ class Main extends eui.UILayer {
             sdk.addMagixEventListener("prevPage", ({ pageIndex }) => {
                 this.mainView.setPageIndex(pageIndex);
             })
+        }).catch(err => {
+            console.log("createNetlessIframeSDK faild", err);
         })
     }
 
