@@ -1,0 +1,293 @@
+{
+	"groups": [
+		{
+			"keys": "icon_png,title_png,icon_json,index_png,launcher_png,pfzt_ttf,a3_png,a1_png,a2_png,bangBg_png",
+			"name": "preload"
+		},
+		{
+			"keys": "ben_page21_png,guai_page21_png,hei_page21_png,last_jpg,lastup_png,lin_page21_png,ling_page21_png,mu_page21_png,next_jpg,nextup_png,oage_xiti1_png,page21_bg_png,page22_bg_png,page_0_png,page_4_png,page_6_png,pagecontrolbg_png,qu_page21_png,ren_page21_png,replay_png,sen_page21_png,you_page21_png,zhenbang_png,chenggong_mp3,cuowu_mp3,gongxi_mp3,ifam_mp3,kapian_mp3,kehouxiti1_mp3,kehouxiti2_mp3,zhengque_mp3,enter_select_png,bg_png,biao_png,er_png,kai_png,mu_png,page2_bg_jpg,qing_png,shan_png,shou_png,shui_png,xin_png,zu_png,dui_png",
+			"name": "load"
+		},
+		{
+			"keys": "index_png",
+			"name": "fast"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/kejian/load/icon.png",
+			"type": "image",
+			"name": "icon_png"
+		},
+		{
+			"url": "assets/kejian/load/title.png",
+			"type": "image",
+			"name": "title_png"
+		},
+		{
+			"url": "assets/kejian/load/icon.json",
+			"type": "json",
+			"name": "icon_json"
+		},
+		{
+			"url": "assets/kejian/page/ben_page21.png",
+			"type": "image",
+			"name": "ben_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/guai_page21.png",
+			"type": "image",
+			"name": "guai_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/hei_page21.png",
+			"type": "image",
+			"name": "hei_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/last.jpg",
+			"type": "image",
+			"name": "last_jpg"
+		},
+		{
+			"url": "assets/kejian/page/lastup.png",
+			"type": "image",
+			"name": "lastup_png"
+		},
+		{
+			"url": "assets/kejian/page/lin_page21.png",
+			"type": "image",
+			"name": "lin_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/ling_page21.png",
+			"type": "image",
+			"name": "ling_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/mu_page21.png",
+			"type": "image",
+			"name": "mu_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/next.jpg",
+			"type": "image",
+			"name": "next_jpg"
+		},
+		{
+			"url": "assets/kejian/page/nextup.png",
+			"type": "image",
+			"name": "nextup_png"
+		},
+		{
+			"url": "assets/kejian/page/oage_xiti1.png",
+			"type": "image",
+			"name": "oage_xiti1_png"
+		},
+		{
+			"url": "assets/kejian/page/page21_bg.png",
+			"type": "image",
+			"name": "page21_bg_png"
+		},
+		{
+			"url": "assets/kejian/page/page22_bg.png",
+			"type": "image",
+			"name": "page22_bg_png"
+		},
+		{
+			"url": "assets/kejian/page/page_0.png",
+			"type": "image",
+			"name": "page_0_png"
+		},
+		{
+			"url": "assets/kejian/page/page_4.png",
+			"type": "image",
+			"name": "page_4_png"
+		},
+		{
+			"url": "assets/kejian/page/page_6.png",
+			"type": "image",
+			"name": "page_6_png"
+		},
+		{
+			"url": "assets/kejian/page/pagecontrolbg.png",
+			"type": "image",
+			"name": "pagecontrolbg_png"
+		},
+		{
+			"url": "assets/kejian/page/qu_page21.png",
+			"type": "image",
+			"name": "qu_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/ren_page21.png",
+			"type": "image",
+			"name": "ren_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/replay.png",
+			"type": "image",
+			"name": "replay_png"
+		},
+		{
+			"url": "assets/kejian/page/sen_page21.png",
+			"type": "image",
+			"name": "sen_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/you_page21.png",
+			"type": "image",
+			"name": "you_page21_png"
+		},
+		{
+			"url": "assets/kejian/page/zhenbang.png",
+			"type": "image",
+			"name": "zhenbang_png"
+		},
+		{
+			"url": "assets/kejian/sound/chenggong.mp3",
+			"type": "sound",
+			"name": "chenggong_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/cuowu.mp3",
+			"type": "sound",
+			"name": "cuowu_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/gongxi.mp3",
+			"type": "sound",
+			"name": "gongxi_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/ifam.mp3",
+			"type": "sound",
+			"name": "ifam_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/kapian.mp3",
+			"type": "sound",
+			"name": "kapian_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/kehouxiti1.mp3",
+			"type": "sound",
+			"name": "kehouxiti1_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/kehouxiti2.mp3",
+			"type": "sound",
+			"name": "kehouxiti2_mp3"
+		},
+		{
+			"url": "assets/kejian/sound/zhengque.mp3",
+			"type": "sound",
+			"name": "zhengque_mp3"
+		},
+		{
+			"url": "assets/kejian/page/enter_select.png",
+			"type": "image",
+			"name": "enter_select_png"
+		},
+		{
+			"url": "assets/kejian/load/index.png",
+			"type": "image",
+			"name": "index_png"
+		},
+		{
+			"url": "assets/kejian/load/launcher.png",
+			"type": "image",
+			"name": "launcher_png"
+		},
+		{
+			"url": "assets/kejian/load/pfzt.ttf",
+			"type": "bin",
+			"name": "pfzt_ttf"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/biao.png",
+			"type": "image",
+			"name": "biao_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/er.png",
+			"type": "image",
+			"name": "er_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/kai.png",
+			"type": "image",
+			"name": "kai_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/mu.png",
+			"type": "image",
+			"name": "mu_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/page2_bg.jpg",
+			"type": "image",
+			"name": "page2_bg_jpg"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/qing.png",
+			"type": "image",
+			"name": "qing_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/shan.png",
+			"type": "image",
+			"name": "shan_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/shou.png",
+			"type": "image",
+			"name": "shou_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/shui.png",
+			"type": "image",
+			"name": "shui_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/xin.png",
+			"type": "image",
+			"name": "xin_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/zu.png",
+			"type": "image",
+			"name": "zu_png"
+		},
+		{
+			"url": "assets/kejian/page/pageview3/dui.png",
+			"type": "image",
+			"name": "dui_png"
+		},
+		{
+			"name": "a3_png",
+			"type": "image",
+			"url": "assets/kejian/page/pageView6/a3.png"
+		},
+		{
+			"name": "a1_png",
+			"type": "image",
+			"url": "assets/kejian/page/pageView6/a1.png"
+		},
+		{
+			"name": "a2_png",
+			"type": "image",
+			"url": "assets/kejian/page/pageView6/a2.png"
+		},
+		{
+			"name": "bangBg_png",
+			"type": "image",
+			"url": "assets/kejian/page/pageView6/bangBg.png"
+		}
+	]
+}

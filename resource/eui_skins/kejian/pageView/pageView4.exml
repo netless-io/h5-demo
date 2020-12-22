@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="pageView6Skin" width="1024" height="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="174582e864d" ></w:Config>
+	<e:Image width="1024" height="580" x="0" y="0" source="bg_png"/>
+	<e:Group id="btn0" width="209" height="207" x="189" y="144">
+		<e:Image width="209" height="207" x="0" y="0" touchEnabled="false" source="a1_png"/>
+	</e:Group>
+	<e:Group id="btn1" width="209" height="207" x="409" y="145">
+		<e:Image width="209" height="207" x="0" y="0" touchEnabled="false" source="a2_png"/>
+	</e:Group>
+	<e:Group id="btn2" width="209" height="207" x="629" y="143">
+		<e:Image width="209" height="207" x="0" y="0" touchEnabled="false" source="a3_png"/>
+	</e:Group>
+	<e:Group id="zhenbang" width="1024" height="580" x="0" y="0" touchChildren="false" alpha="1" visible="false">
+		<e:Image width="1024" height="580" x="0" y="0" source="bg_png" touchEnabled="false"/>
+		<e:Image width="538" height="378" x="243" y="83" touchEnabled="false" source="bangBg_png"/>
+	</e:Group>
+</e:Skin>

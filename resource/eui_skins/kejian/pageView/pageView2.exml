@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="pageview3Skin" width="1024" height="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="17457f6dc9a" ></w:Config>
+	<e:Group width="1024" height="580" x="0" y="0" id="buttonGroup">
+		<e:Image width="1024" height="580" x="0" y="0" source="bg_png"/>
+		<e:Group id="btn0" width="104" height="140" left="203" top="105">
+			<e:Image width="104" height="140" x="0" y="0" source="biao_png" touchEnabled="false"/>
+			<e:Image id="btn0Select" width="70" height="58" x="17" y="41" source="dui_png" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Group id="btn1" width="104" height="140" x="332" y="105">
+			<e:Image width="104" height="140" x="0" y="0" source="qing_png" touchEnabled="false"/>
+			<e:Image id="btn1Select" width="70" height="58" x="17" y="41" source="dui_png" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Group id="btn2" width="104" height="140" x="461" y="105">
+			<e:Image width="104" height="140" x="0" y="0" source="shan_png" touchEnabled="false"/>
+			<e:Image id="btn2Select" width="70" height="58" x="17" y="41" source="dui_png" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Group id="btn3" width="104" height="140" x="590" y="105">
+			<e:Image width="104" height="140" x="0" y="0" source="shui_png"/>
+		</e:Group>
+		<e:Group id="btn4" width="104" height="140" x="719" y="105">
+			<e:Image width="104" height="140" x="0" y="0" source="kai_png"/>
+		</e:Group>
+		<e:Group id="btn5" width="104" height="140" x="202" y="275">
+			<e:Image width="104" height="140" x="0" y="0" source="xin_png"/>
+		</e:Group>
+		<e:Group id="btn6" width="104" height="140" x="332" y="275">
+			<e:Image width="104" height="140" x="0" y="0" source="shou_png"/>
+		</e:Group>
+		<e:Group id="btn7" width="104" height="140" x="461" y="275">
+			<e:Image width="104" height="140" x="0" y="0" source="zu_png"/>
+		</e:Group>
+		<e:Group id="btn8" width="104" height="140" x="591" y="275">
+			<e:Image width="104" height="140" x="0" y="0" source="er_png"/>
+		</e:Group>
+		<e:Group id="btn9" width="104" height="140" x="720" y="275">
+			<e:Image width="104" height="140" x="0" y="0" source="mu_png"/>
+		</e:Group>
+		<e:Group id="zhenbang" width="1024" height="580" x="0" y="0" touchChildren="false" alpha="0" visible="false">
+			<e:Image width="1024" height="580" x="0" y="0" source="bg_png" touchEnabled="false"/>
+			<e:Image width="538" height="378" x="243" y="83" touchEnabled="false" source="bangBg_png"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,10 @@
+{
+    "global": {
+        "globalAutoLayerMarkEnable": true
+    },
+    "174582e864d": {
+        "path": "..\\resource\\eui_skins\\kejian\\pageView\\pageView6.ts",
+        "class": "pageView6",
+        "parentPath": ""
+    }
+}

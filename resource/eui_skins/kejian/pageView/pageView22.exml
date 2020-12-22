@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="pageView2" width="1024" height="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Group left="0" top="0" right="0" bottom="0">
+		<e:Image width="1024" height="580" x="0" y="0" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="page22_bg_png"/>
+		<e:Group id="btn0" scaleX="1" scaleY="1" top="101" left="115">
+			<e:Image source="mu_page21_png" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+			<e:Image id="btn0Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn1" scaleX="1" scaleY="1" top="101" left="235">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="qu_page21_png" touchEnabled="false"/>
+			<e:Image id="btn1Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn2" scaleX="1" scaleY="1" top="101" left="355">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="sen_page21_png" touchEnabled="false"/>
+			<e:Image id="btn2Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn3" scaleX="1" scaleY="1" top="101" left="596.5">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="lin_page21_png" touchEnabled="false"/>
+			<e:Image id="btn3Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn4" scaleX="1" scaleY="1" top="101" left="727">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="hei_page21_png" touchEnabled="false"/>
+			<e:Image id="btn4Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn5" scaleX="1" scaleY="1" left="115" top="275">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="guai_page21_png" touchEnabled="false"/>
+			<e:Image id="btn5Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn6" scaleX="1" scaleY="1" left="235" top="275">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="ren_page21_png" touchEnabled="false"/>
+			<e:Image id="btn6Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn7" scaleX="1" scaleY="1" left="355" top="275">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="you_page21_png" touchEnabled="false"/>
+			<e:Image id="btn7Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn8" scaleX="1" scaleY="1" left="596.5" top="275">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="ben_page21_png" touchEnabled="false"/>
+			<e:Image id="btn8Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" visible="false" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="btn9" scaleX="1" scaleY="1" left="727" top="275">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="ling_page21_png" touchEnabled="false"/>
+			<e:Image id="btn9Select" horizontalCenter="0" verticalCenter="0" source="enter_select_png" touchEnabled="false" visible="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="gongxi" source="zhenbang_png" left="0" verticalCenter="0" touchEnabled="false" alpha="0"/>
+</e:Skin>

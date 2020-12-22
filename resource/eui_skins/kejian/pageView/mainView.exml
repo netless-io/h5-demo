@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="mainView" width="1024" height="576" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="mainGroup" left="0" top="0" right="0" bottom="0">
+		<e:Group id="viewGroup" left="0" top="0" right="0" bottom="0"/>
+		<e:Group id="controlGroup" bottom="10" x="630">
+			<e:Image source="pagecontrolbg_png" verticalCenter="0" horizontalCenter="0"/>
+			<e:Button id="fastPage" label="" verticalCenter="0" left="10">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="last_jpg" source.down="last_jpg" alpha.down="0.8"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="resetPage" label="" verticalCenter="0" horizontalCenter="48">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="replay_png" source.down="replay_png" alpha.down='0.8'/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="lastPage" label="" verticalCenter="0" right="10">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="nextup_png" source.down="nextup_png" alpha.down='0.8'/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group width="65" height="40" x="97.6" y="20.4" anchorOffsetX="0" anchorOffsetY="0">
+				<e:Label id="pageNumber" text="1/12" horizontalCenter="0" verticalCenter="0" size="24" fontFamily="pfzt"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>
