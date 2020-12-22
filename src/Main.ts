@@ -51,6 +51,12 @@ class Main extends eui.UILayer {
         this.createGameScene();
         const pageIndex = (window as any).netlessIframeSDK.attributes.pageIndex;
         this.mainView.setPageIndex(pageIndex);
+        (window as any).netlessIframeSDK.addMagixEventListener("nextPage", ({ pageIndex }) => {
+            this.mainView.setPageIndex(pageIndex);
+        })
+        (window as any).netlessIframeSDK.addMagixEventListener("prevPage", ({ pageIndex }) => {
+            this.mainView.setPageIndex(pageIndex);
+        })
     }
 
     private async loadResource() {
