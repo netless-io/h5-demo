@@ -49,14 +49,17 @@ class Main extends eui.UILayer {
         console.log("runGame")
         await this.loadResource()
         this.createGameScene();
-        const pageIndex = (window as any).netlessIframeSDK.attributes.pageIndex;
-        this.mainView.setPageIndex(pageIndex);
-        (window as any).netlessIframeSDK.addMagixEventListener("nextPage", ({ pageIndex }) => {
+        if ((window as any).netlessIframeSDK) {
+            const pageIndex = (window as any).netlessIframeSDK.attributes.pageIndex;
             this.mainView.setPageIndex(pageIndex);
-        })
-        (window as any).netlessIframeSDK.addMagixEventListener("prevPage", ({ pageIndex }) => {
-            this.mainView.setPageIndex(pageIndex);
-        })
+            console.log("debug: ", (window as any).netlessIframeSDK.addMagixEventListener);
+            (window as any).netlessIframeSDK.addMagixEventListener("nextPage", ({ pageIndex }) => {
+                this.mainView.setPageIndex(pageIndex);
+            })
+            (window as any).netlessIframeSDK.addMagixEventListener("prevPage", ({ pageIndex }) => {
+                this.mainView.setPageIndex(pageIndex);
+            })
+        }
     }
 
     private async loadResource() {
