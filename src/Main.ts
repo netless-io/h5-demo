@@ -51,6 +51,7 @@ class Main extends eui.UILayer {
         this.createGameScene();
         const NetlessIframeSDK = (window as any).NetlessIframeSDK;
         NetlessIframeSDK.createNetlessIframeSDK("http://localhost:8000").then(sdk => {
+            console.log("netlessIframeSDK create Success", sdk);
             (window as any).netlessIframeSDK = sdk;
             const pageIndex = sdk.attributes.pageIndex;
             this.mainView.setPageIndex(pageIndex);
