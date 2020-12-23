@@ -110,6 +110,7 @@ class MainView extends eui.Component{
         /**重置 */
         this['resetPage'].addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{
             this.resetPageHandler();
+            SdkManager.getSDK().dispatchMagixEvent("resetPage", true);
         },this);
     }
 
