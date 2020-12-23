@@ -147,8 +147,9 @@ class MainView extends eui.Component{
     }
 
     private changePage(event: string, pageIndex: number) {
-        console.log((window as any).netlessIframeSDK);
-        (window as any).netlessIframeSDK.setAttributes({ pageIndex })
-        (window as any).netlessIframeSDK.dispatchMagixEvent(event, { pageIndex });
+        const sdk = (window as any).netlessIframeSDK;
+        console.log("changePage", sdk.setAttributes);
+        sdk.setAttributes({ pageIndex });
+        sdk.dispatchMagixEvent(event, { pageIndex });
     }
 }
