@@ -54,7 +54,7 @@ class Main extends eui.UILayer {
             console.log("netlessIframeSDK create Success", sdk);
             (window as any).netlessIframeSDK = sdk;
             const pageIndex = sdk.attributes.pageIndex;
-            this.mainView.setPageIndex(pageIndex);
+            this.mainView.setPageIndex(pageIndex || 1);
             sdk.addMagixEventListener("nextPage", ({ pageIndex }) => {
                 this.mainView.setPageIndex(pageIndex);
             })
