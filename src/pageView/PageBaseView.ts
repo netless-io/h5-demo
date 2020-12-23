@@ -34,6 +34,7 @@ class PageBaseView extends eui.Component{
         }
     }
     private pageView6():void{
+        const sdk = SdkManager.getSDK();
         const PageView6_ButtonTap = "PageView6_ButtonTap";
         this["zhenbang"]['visible'] = false;
         for(let i = 0;i<3;i++)
@@ -62,7 +63,7 @@ class PageBaseView extends eui.Component{
             }
         }
 
-        (window as any).netlessIframeSDK.addMagixEventListener(PageView6_ButtonTap, ({ id }) => {
+        sdk.addMagixEventListener(PageView6_ButtonTap, ({ payload: { id } }) => {
             Tools.playSound("resource/assets/kejian/sound/touch.mp3");
             if (id == 0 || id == 1 || id == 2) { 
                 onPageView6ButtonTap({ eventIdx: id })
@@ -73,6 +74,7 @@ class PageBaseView extends eui.Component{
     }
 
     private pageView3():void{
+        const sdk = SdkManager.getSDK();
         let idx:number = 0;
         this['zhenbang'].visible = false;
         const PageView3_ButtonTap = "PageView3_ButtonTap";
@@ -106,7 +108,8 @@ class PageBaseView extends eui.Component{
             }
         }
 
-        (window as any).netlessIframeSDK.addMagixEventListener(PageView3_ButtonTap, ({ id }) => {
+        sdk.addMagixEventListener(PageView3_ButtonTap, ({ payload }) => {
+            const id = payload.id;
             Tools.playSound("resource/assets/kejian/sound/touch.mp3");
             if (id == 0 || id == 1 || id == 2) { 
                 onPageView3ButtonTap({ eventIdx: id })
