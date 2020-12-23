@@ -1670,12 +1670,11 @@
 	        this._attributes = attributes;
 	        this._roomState = roomState;
 	        window.addEventListener("message", this.messageListener.bind(this));
-	        // window.addEventListener("unload", function () {
-            //     console.log("debug:", "window unload event")
-	        //     _this.emitter.removeAllListeners();
-	        //     _this.magixEmitter.removeAllListeners();
-	        //     _this.postMessage(BridgeEvent.RemoveAllMagixEvent, true);
-	        // });
+	        window.addEventListener("unload", function () {
+	            _this.emitter.removeAllListeners();
+	            _this.magixEmitter.removeAllListeners();
+	            _this.postMessage(BridgeEvent.RemoveAllMagixEvent, true);
+	        });
 	    }
 	    NetlessIframeSDK.prototype.messageListener = function (event) {
 	        if ((typeof event.data) !== "object" && event.data !== null) {
@@ -1816,15 +1815,16 @@
 	}());
 
 	var Init = "Init";
-	var InitTimeout = 1000;
+	var SDKCreate = "SDKCreate";
+	var InitTimeout = 500;
 	var createNetlessIframeSDK = function (targetOrigin) {
+	    parent.postMessage({ kind: SDKCreate }, targetOrigin);
 	    return new Promise(function (resolve, reject) {
 	        var listener = function (event) {
 	            var data = event.data;
 	            if (data.kind === Init) {
 	                var _a = data.payload, attributes = _a.attributes, roomState = _a.roomState;
-                    var sdk = new NetlessIframeSDK(targetOrigin, attributes, roomState);
-                    console.log(sdk)
+	                var sdk = new NetlessIframeSDK(targetOrigin, attributes, roomState);
 	                window.removeEventListener("message", listener);
 	                clearTimeout(timer);
 	                resolve(sdk);
