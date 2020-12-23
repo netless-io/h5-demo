@@ -51,7 +51,7 @@ class Main extends eui.UILayer {
         this.createGameScene();
         const manager = new SdkManager();
         const sdk = await manager.initSdk();
-        const pageIndex = sdk.attributes().pageIndex;
+        const pageIndex = sdk.attributes.pageIndex;
         this.mainView.setPageIndex(pageIndex || 1);
         sdk.addMagixEventListener("nextPage", ({ pageIndex }) => {
             this.mainView.setPageIndex(pageIndex);

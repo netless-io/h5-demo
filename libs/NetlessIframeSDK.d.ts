@@ -15,7 +15,7 @@ declare class NetlessIframeSDK {
     private didDestory;
     constructor(targetOrigin: string, attributes: Attributes, roomState: any);
     private messageListener;
-    attributes(): Attributes;
+    attributes: Attributes;
     setAttributes(payload: any): void;
     private postMessage;
     on(event: string, listener: any): void;
