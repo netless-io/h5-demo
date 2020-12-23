@@ -90,19 +90,16 @@ class MainView extends eui.Component{
             if(this.pageIndex < 1)this.pageIndex = this.pageTotal;
             this.switchTypeView();
             Tools.playSound("resource/assets/kejian/sound/touch.mp3");
-            (window as any).netlessIframeSDK.setAttributes({ pageIndex: this.pageIndex })
-            (window as any).netlessIframeSDK.dispatchMagixEvent("prevPage", { pageIndex: this.pageIndex });
-            
+            this.changePage("prevPage", this.pageIndex);
         },this);
 
         /**下一页 */
         this['lastPage'].addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{
             this.pageIndex ++;
-            if(this.pageIndex > this.pageTotal)this.pageIndex = 1;
+            if(this.pageIndex > this.pageTotal) this.pageIndex = 1;
             this.switchTypeView();
             Tools.playSound("resource/assets/kejian/sound/touch.mp3");
-            (window as any).netlessIframeSDK.setAttributes({ pageIndex: this.pageIndex })
-            (window as any).netlessIframeSDK.dispatchMagixEvent("nextPage", { pageIndex: this.pageIndex });
+            this.changePage("nextPage", this.pageIndex);
         },this);
 
         /**重置 */
@@ -147,5 +144,10 @@ class MainView extends eui.Component{
     private enterView():void{
         let pageView:PageBaseView = new PageBaseView(this.pageIndex);
         this['viewGroup'].addChild(pageView);
+    }
+
+    private changePage(event: string, pageIndex: number) {
+        (window as any).netlessIframeSDK.setAttributes({ pageIndex })
+        (window as any).netlessIframeSDK.dispatchMagixEvent(event, { pageIndex });
     }
 }
