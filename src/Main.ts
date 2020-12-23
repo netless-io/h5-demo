@@ -49,24 +49,19 @@ class Main extends eui.UILayer {
         console.log("runGame")
         await this.loadResource()
         this.createGameScene();
-        const NetlessIframeSDK = (window as any).NetlessIframeSDK;
-        NetlessIframeSDK.createNetlessIframeSDK("http://localhost:8000").then(sdk => {
-            console.log("netlessIframeSDK create Success", sdk);
-            (window as any).netlessIframeSDK = sdk;
-            const pageIndex = sdk.attributes.pageIndex;
-            this.mainView.setPageIndex(pageIndex || 1);
-            sdk.addMagixEventListener("nextPage", ({ pageIndex }) => {
-                this.mainView.setPageIndex(pageIndex);
-            });
-            sdk.addMagixEventListener("prevPage", ({ pageIndex }) => {
-                this.mainView.setPageIndex(pageIndex);
-            });
-            sdk.addMagixEventListener("resetPage", () => {
-                this.mainView.resetPageHandler();
-            });
-        }).catch(err => {
-            console.log("createNetlessIframeSDK faild", err);
-        })
+        const manager = new SdkManager();
+        const sdk = await manager.initSdk();
+        const pageIndex = sdk.attributes().pageIndex;
+        this.mainView.setPageIndex(pageIndex || 1);
+        sdk.addMagixEventListener("nextPage", ({ pageIndex }) => {
+            this.mainView.setPageIndex(pageIndex);
+        });
+        sdk.addMagixEventListener("prevPage", ({ pageIndex }) => {
+            this.mainView.setPageIndex(pageIndex);
+        });
+        sdk.addMagixEventListener("resetPage", () => {
+            this.mainView.resetPageHandler();
+        });
     }
 
     private async loadResource() {

@@ -169,6 +169,7 @@ class PageBaseView extends eui.Component{
     }
 
     private sentEvent(event: string, id: number) {
-        (window as any).netlessIframeSDK.dispatchMagixEvent(event, { id })
+        const sdk = SdkManager.getSDK();
+        sdk.dispatchMagixEvent(event, { id });
     }
 }
