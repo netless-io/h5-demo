@@ -14,6 +14,11 @@ class MainView extends eui.Component{
         this.switchTypeView();
     }
 
+    public resetPageHandler() {
+        this.switchTypeView();
+        Tools.playSound("resource/assets/kejian/sound/touch.mp3");
+    }
+
     public createChildren():void{
         super.createChildren();
         this.eventMonitor();
@@ -104,8 +109,7 @@ class MainView extends eui.Component{
 
         /**重置 */
         this['resetPage'].addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{
-            this.switchTypeView();
-            Tools.playSound("resource/assets/kejian/sound/touch.mp3");
+            this.resetPageHandler();
         },this);
     }
 
@@ -148,7 +152,6 @@ class MainView extends eui.Component{
 
     private changePage(event: string, pageIndex: number) {
         const sdk = (window as any).netlessIframeSDK;
-        console.log("changePage", sdk.setAttributes);
         sdk.setAttributes({ pageIndex });
         sdk.dispatchMagixEvent(event, { pageIndex });
     }
