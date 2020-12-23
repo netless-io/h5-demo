@@ -110,7 +110,7 @@ class MainView extends eui.Component{
         /**重置 */
         this['resetPage'].addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{
             this.resetPageHandler();
-            SdkManager.getSDK().dispatchMagixEvent("resetPage", true);
+            SdkManager.sdk.dispatchMagixEvent("resetPage", true);
         },this);
     }
 
@@ -152,7 +152,7 @@ class MainView extends eui.Component{
     }
 
     private changePage(event: string, pageIndex: number) {
-        const sdk = SdkManager.getSDK();
+        const sdk = SdkManager.sdk;
         sdk.setAttributes({ pageIndex });
         sdk.dispatchMagixEvent(event, { pageIndex });
     }

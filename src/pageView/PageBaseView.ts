@@ -34,7 +34,7 @@ class PageBaseView extends eui.Component{
         }
     }
     private pageView6():void{
-        const sdk = SdkManager.getSDK();
+        const sdk = SdkManager.sdk;
         const PageView6_ButtonTap = "PageView6_ButtonTap";
         this["zhenbang"]['visible'] = false;
         for(let i = 0;i<3;i++)
@@ -74,7 +74,7 @@ class PageBaseView extends eui.Component{
     }
 
     private pageView3():void{
-        const sdk = SdkManager.getSDK();
+        const sdk = SdkManager.sdk;
         let idx:number = 0;
         this['zhenbang'].visible = false;
         const PageView3_ButtonTap = "PageView3_ButtonTap";
@@ -172,7 +172,7 @@ class PageBaseView extends eui.Component{
     }
 
     private sentEvent(event: string, id: number) {
-        const sdk = SdkManager.getSDK();
+        const sdk = SdkManager.sdk;
         sdk.dispatchMagixEvent(event, { id });
     }
 }

@@ -5,7 +5,7 @@ type SDK = {
 
 class SdkManager {
 
-    public static sdk: NetlessIframeSDK = null
+    public static sdk: NetlessIframeSDK = null;
 
     async initSdk(): Promise<NetlessIframeSDK> {
         const SDK = (window as any).NetlessIframeSDK as SDK;
@@ -19,7 +19,7 @@ class SdkManager {
         }
     }
 
-    public static getSDK(): NetlessIframeSDK {
+    public static getSdk(): NetlessIframeSDK {
         return SdkManager.sdk;
     }
 }
