@@ -1788,17 +1788,9 @@
 	        }
 	    };
 	    NetlessIframeSDK.prototype.nextPage = function () {
-	        if (this.currentPage >= this.totalPages) {
-	            console.warn("currentPage cannot be greater than the " + this.totalPages);
-	            return;
-	        }
 	        this.postMessage(BridgeEvent.NextPage, true);
 	    };
 	    NetlessIframeSDK.prototype.prevPage = function () {
-	        if (this.currentPage <= 1) {
-	            console.warn("currentPage cannot be less than 1");
-	            return;
-	        }
 	        this.postMessage(BridgeEvent.PrevPage, true);
 	    };
 	    NetlessIframeSDK.prototype.destroy = function () {

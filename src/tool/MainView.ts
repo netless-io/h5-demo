@@ -95,7 +95,7 @@ class MainView extends eui.Component{
             if(this.pageIndex < 1)this.pageIndex = this.pageTotal;
             this.switchTypeView();
             Tools.playSound("resource/assets/kejian/sound/touch.mp3");
-            this.changePage("prevPage", this.pageIndex);
+            SdkManager.sdk.prevPage();
         },this);
 
         /**下一页 */
@@ -104,7 +104,7 @@ class MainView extends eui.Component{
             if(this.pageIndex > this.pageTotal) this.pageIndex = 1;
             this.switchTypeView();
             Tools.playSound("resource/assets/kejian/sound/touch.mp3");
-            this.changePage("nextPage", this.pageIndex);
+            SdkManager.sdk.nextPage();
         },this);
 
         /**重置 */

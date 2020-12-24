@@ -53,10 +53,10 @@ class Main extends eui.UILayer {
         const sdk = await manager.initSdk();
         const pageIndex = sdk.attributes.pageIndex;
         this.mainView.setPageIndex(pageIndex || 1);
-        sdk.addMagixEventListener("nextPage", ({ payload }) => {
+        sdk.addMagixEventListener(SdkManager.NextPage, ({ payload }) => {
             this.mainView.setPageIndex(payload.pageIndex);
         });
-        sdk.addMagixEventListener("prevPage", ({ payload }) => {
+        sdk.addMagixEventListener(SdkManager.PrevPage, ({ payload }) => {
             this.mainView.setPageIndex(payload.pageIndex);
         });
         sdk.addMagixEventListener("resetPage", () => {

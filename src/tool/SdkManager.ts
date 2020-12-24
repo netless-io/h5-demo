@@ -7,10 +7,13 @@ class SdkManager {
 
     public static sdk: NetlessIframeSDK = null;
 
+    public static NextPage = "NextPage";
+    public static PrevPage = "PrevPage";
+
     async initSdk(): Promise<NetlessIframeSDK> {
         const SDK = (window as any).NetlessIframeSDK as SDK;
         try {
-            const sdk = await SDK.createNetlessIframeSDK("https://demo.netless.link/");
+            const sdk = await SDK.createNetlessIframeSDK("http://localhost:8000");
             SdkManager.sdk = sdk;
             console.log("NetlessIframeSDK create success")
             return sdk;
