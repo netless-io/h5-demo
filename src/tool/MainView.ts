@@ -1,6 +1,6 @@
 class MainView extends eui.Component{
     /**界面索引 */
-    private pageIndex:number = 1;
+    public pageIndex:number = 1;
     /**页面总数 */
     private pageTotal:number = 6;
     public constructor(pageIndex:number = 1){
