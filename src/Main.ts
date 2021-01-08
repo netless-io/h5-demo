@@ -62,6 +62,19 @@ class Main extends eui.UILayer {
         sdk.addMagixEventListener("resetPage", () => {
             this.mainView.resetPageHandler();
         });
+        sdk.on("AttributesUpdate", (state) => {
+            if (state.pageIndex) {
+                if (state.pageIndex === this.mainView.pageIndex) return;
+                this.mainView.setPageIndex(state.pageIndex);
+            }
+        })
+        sdk.on("RoomStateChanged", (state) => {
+            if (state.sceneState) {
+                const nextPage = state.sceneState.index + 1;
+                if (nextPage === this.mainView.pageIndex) return;
+                this.mainView.setPageIndex(state.sceneState.index + 1);
+            }
+        });
     }
 
     private async loadResource() {
